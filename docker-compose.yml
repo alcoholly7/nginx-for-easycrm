@@ -10,5 +10,5 @@ services:
     easycrm:
         depends_on:
             - reverseproxy
-        image: alchoholly/easycrm
+        image: alchoholly/easycrm # or change this to your EasyCRM image name
         restart: always
