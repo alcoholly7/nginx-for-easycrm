@@ -4,7 +4,7 @@ services:
     reverseproxy:
         image: alchoholly/nginx-for-easycrm
         ports:
-            - 8090:8090
+            - 8080:8090
         restart: always
 
     easycrm:
