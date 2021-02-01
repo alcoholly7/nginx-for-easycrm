@@ -4,21 +4,7 @@ services:
     reverseproxy:
         image: alchoholly/nginx-for-easycrm
         ports:
-            - 8080:8080
-            - 8081:8081
             - 8090:8090
-        restart: always
-
-    nginx:
-        depends_on:
-            - reverseproxy
-        image: nginx:alpine
-        restart: always
-
-    apache:
-        depends_on:
-            - reverseproxy
-        image: httpd:alpine
         restart: always
 
     easycrm:
